@@ -1,35 +1,327 @@
-<h3>MITRA INDUSTRI CARIER</h3>
+<html lang="en">
+  <head>
+  	<title>BKK SMK Mitra Industri MM2100</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<h3>Silahkan isi bioata ini dengan baik dan benar</h3>
-<form actionm="" menthod="POST">
-    <table>
-        <tr>
-            <td>Nama Lengkap</td>
-            <tr>
-            <td><input type="text"></td>
-        </tr>
-        <td>NO.NPWP</td>
-        <tr>
-            <td><input type="number"></td>
-        </tr>
-        <td>NO.KTP</td>
-        <tr>
-            <td><input type="number"></td>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
-        </tr>
-<td>Jenis Kelamin</td>
-<tr>
-<td><input type="radio" name=" jk">Laki laki</td>
-<tr><td><input type="radio" name="jk">Perempuan</td></tr>
-</tr>
-<td>Tanggal Lahir</td>
-<tr>
-    <td><input type="date"></td>
-</tr>
-<td>Status Pernikahan</td>
-<tr>
-    <td><input type="radio">Single</td>
-    <tr>
-        <td><input type="radio">Menikah</td>
-    </tr>
-<td><input type="submit"></td>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section" style="color:blue"><b>MITRA INDUSTRI CARIER</b></h2>
+					<!--<br>-->
+					<!--<center><img src="bkk.png" width="100%"></center>-->
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-10 col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-md-7 d-flex align-items-stretch">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">Silahkan isi biodata ini dengan baik dan benar</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            Your message was sent, thank you!
+				      		</div>
+									<form method="POST">
+																				<div class="row">
+											<!--<label>Keterangan Lulusan</label>-->
+											<!--<div class="col-md-12">-->
+           <!--                 					<select class="form-group form-control" name="lulusan" required>-->
+           <!--                 					-->
+           <!--                 					<option value="0">-Pilih-</option>-->
+           <!--                 					-->
+           <!--                 					<option value="Alumni SMK Mitra Industri MM2100">Alumni SMK Mitra Industri MM2100</option>-->
+           <!--                 					<option value="Umum (Bukan Alumni SMK Mitra Industri MM2100)">Umum (Bukan Alumni SMK Mitra Industri MM2100)</option>-->
+           <!--                 					</select>-->
+           <!--                 				</div>-->
+											<label>Nama Lengkap<font color="red"> *</font></label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="nama" id="nama" placeholder="Nama Lengkap" value="" required>
+												</div>
+											</div>
+											<label>No. NPWP<font color="red"> *</font></label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="npwp" id="npwp" placeholder="No. NPWP" value="" required>
+												</div>
+											</div>
+											<label>No. KTP<font color="red"> *</font></label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="number" class="form-control" name="ktp" id="ktp" placeholder="No. KTP" value="" required>
+												</div>
+											</div>
+											<label>Jenis Kelamin<font color="red"> *</font></label>
+                                                  	<div class="selectgroup w-100">
+                                                    <label class="selectgroup-item">
+                                                      <input type="radio" name="kelamin" value="Laki-Laki">
+                                                      <span class="selectgroup-button">Laki-Laki</span>
+                                                    </label><br>
+                                                    <label class="selectgroup-item">
+                                                      <input type="radio" name="kelamin" value="Perempuan">
+                                                      <span class="selectgroup-button">Perempuan</span>
+                                                    </label>
+                                                  </div>
+											<label>Tanggal Lahir<font color="red"> *</font></label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="date" class="form-control" name="ttl" id="ttl" value="" required>
+												</div>
+											</div>
+											<label>Status Pernikahan<font color="red"> *</font></label>
+											<div class="col-md-12">
+                            					<select class="form-group form-control" name="status" required>
+                            					                            					<option value="0">-Pilih-</option>
+                            					                            					<option value="Single">Single</option>
+                            					<option value="Menikah">Menikah</option>
+                            					</select>
+                            				</div>
+											<label>Pendidikan Akhir<font color="red"> *</font></label>
+											<div class="col-md-12">
+                            					<select class="form-group form-control" name="pendidikan" required>
+                            					                            					<option value="0">-Pilih-</option>
+                            					                            					<option value="SMK Sederajat">SMK Sederajat</option>
+                            					<option value="Diploma">Diploma</option>
+                            					<option value="Sarjana">Sarjana</option>
+                            					</select>
+                            				</div>
+											<label>Asal Sekolah/Universitas<font color="red"> *</font></label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="sekolah" id="sekolah" placeholder="Asal Sekolah/Universitas" value="" required>
+												</div>
+											</div>
+											<label>Kota Asal Sekolah<font color="red"> *</font></label>
+											<div class="col-md-12">
+                            					<select class="form-group form-control" name="asal" required>
+                            					                            					<option value="0">-Pilih-</option>
+                            					                            					<option value="Kabupaten Bekasi">Kabupaten Bekasi</option>
+                            					<option value="Luar Kabupaten Bekasi">Luar Kabupaten Bekasi</option>
+                            					</select>
+                            				</div>
+											<label>IPK</label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="ipk" id="ipk" placeholder="IPK (Khusus untuk D3 & Sarjana)" value="">
+												</div>
+											</div>
+											<label>Jurusan<font color="red"> *</font></label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="jurusan" id="jurusan" placeholder="Jurusan" value="" required>
+												</div>
+											</div>
+											<label>Alamat<font color="red"> *</font></label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea name="alamat" class="form-control" id="alamat" cols="30" rows="7" placeholder="Alamat" required></textarea>
+												</div>
+											</div>
+											<label>No. Handphone<font color="red"> *</font></label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="number" class="form-control" name="no" id="no" placeholder="Ex: 6281*********" value="62" value="" required>
+												</div>
+											</div>
+											<label>Email<font color="red"> *</font></label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email Aktif" value="" required>
+												</div>
+											</div>
+											<label>Tahun Lulus<font color="red"> *</font></label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="number" class="form-control" name="tahun" id="tahun" placeholder="Tahun Lulus" value="" required>
+												</div>
+											</div>
+											<label>Nilai Ijazah Bahasa Indonesia</label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="number" class="form-control" name="indonesia" id="indonesia" placeholder="1-100" value="">
+												</div>
+											</div>
+											<label>Nilai Ijazah Bahasa Inggris</label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="number" class="form-control" name="inggris" id="inggris" placeholder="1-100" value="">
+												</div>
+											</div>
+											<label>Nilai Ijazah Matematika</label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="number" class="form-control" name="matematika" id="matematika" placeholder="1-100" value="">
+												</div>
+											</div>
+											<label>Tinggi Badan<font color="red"> *</font></label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="number" class="form-control" name="tinggi" id="tinggi" placeholder="... m" value="" required>
+												</div>
+											</div>
+											<label>Berat Badan<font color="red"> *</font></label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="number" class="form-control" name="berat" id="berat" placeholder="... kg" value="" required>
+												</div>
+											</div>
+											<label>Melamar di Posisi<font color="red"> *</font></label>
+											<div class="col-md-12">
+                            					<select class="form-group form-control" name="posisi" required>
+                            					                            					<option value="0">-Pilih-</option>
+                            					                                    		                                        		    <option value="Accounting">Accounting</option>
+                                    		                                        		    <option value="Administrasi">Administrasi</option>
+                                    		                                        		    <option value="Driver">Driver</option>
+                                    		                                        		    <option value="Electrical">Electrical</option>
+                                    		                                        		    <option value="Maintenance">Maintenance</option>
+                                    		                                        		    <option value="Mechanical">Mechanical</option>
+                                    		                                        		    <option value="Operator Forklift">Operator Forklift</option>
+                                    		                                        		    <option value="Operator Produksi">Operator Produksi</option>
+                                    		                                        		    <option value="Resepsionis">Resepsionis</option>
+                                    		                                        		    <option value="Teknisi">Teknisi</option>
+                                    		                                        		    <option value="Teknisi AC">Teknisi AC</option>
+                                    		                                        		    <option value="Teknisi Injection Molding">Teknisi Injection Molding</option>
+                                    		                                					<option value="Lainnya">Lainnya</option>
+                            					</select>
+                            				</div>
+											<label>Siap ditempatkan<font color="red"> *</font></label>
+											<div class="col-md-12">
+                            					<select class="form-group form-control" name="siap" required>
+                            					                            					<option value="0">-Pilih-</option>
+                            					                            					<option value="Bekasi">Bekasi</option>
+                            					<option value="Karawang">Karawang</option>
+                            					<option value="Dimanapun">Dimanapun</option>
+                            					</select>
+                            				</div>
+											<label>Pengalaman Kerja<font color="red"> *</font></label>
+											<div class="col-md-12">
+                            					<select class="form-group form-control" name="fresh" required>
+                            					                            					<option value="0">-Pilih-</option>
+                            					                            					<option value="Freshgraduate">Freshgraduate</option>
+                            					<option value="Berpengalaman">Berpengalaman</option>
+                            					</select>
+                            				</div>
+											<label>Pengalaman Kerja (Jika Ada)</label>
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea name="pengalaman" class="form-control" id="pengalaman" cols="30" rows="4" placeholder="Jika berpengalaman Jelaskan (Nama PT, lama kerja, Posisi, Jobdesk)."></textarea>
+												</div>
+											</div>
+											<label>Vaksinasi<font color="red"> *</font></label>
+											<div class="col-md-12">
+                            					<select class="form-group form-control" name="vaksin" required>
+                            					                            					<option value="0">-Pilih-</option>
+                            					                            					<option value="Belum">Belum</option>
+                            					<option value="Dosis 1">Dosis 1</option>
+                            					<option value="Dosis 2">Dosis 2</option>
+                            					<option value="Dosis 3">Dosis 3</option>
+                            					</select>
+                            				</div>
+											<label>Apakah anda bersedia jika perushaaan membutuhkan magang?<font color="red"> *</font></label>
+											<div class="col-md-12">
+                            					<select class="form-group form-control" name="magang" required>
+                            					                            					<option value="0">-Pilih-</option>
+                            					                            					<option value="Ya">Ya</option>
+                            					<option value="Tidak">Tidak</option>
+                            					</select>
+                            				</div>
+                            				<div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="check-3" required>
+                                                <label class="custom-control-label" for="check-3">Dengan ini saya menyatakan bahwa sesungguhnya data yang saya berikan adalah benar. Apabila dikemudian hari ditemukan bahwa data yang saya berikan tidak benar/palsu, maka saya bersedia dikenakan sanksi.</label>
+                                              </div>
+                                              <br>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" name="add" value="Daftar" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-5 d-flex align-items-stretch">
+								<div class="info-wrap bg-primary w-100 p-lg-5 p-4">
+									<h3 class="mb-4 mt-md-4">Contact us</h3>
+				        	<div class="dbox w-100 d-flex align-items-start">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-map-marker"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Address:</span> Jl. Kalimantan No.2, Danau Indah, Kec. Cikarang Barat, Bekasi, Jawa Barat 17530</p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-phone"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Phone:</span> <a href="tel://02189983961">02189983961</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-paper-plane"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Email:</span> <a href="mailto:hidayat.atori@smkind-mm2100.sch.id">hidayat.atori@smkind-mm2100.sch.id</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-globe"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Website</span> <a href="https://smkmitraindustrimm2100.com">smkmitraindustrimm2100.com</a></p>
+					          </div>
+				          </div>
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer container-fluid pl-30 pr-30">
+				<div class="row no-print">
+					<div class="col-sm-12">
+						<center><p><b><a href="#" target="_blank">BKK SMK Mitra Industri MM2100</a></b> &copy; 2021 | Development by <b><a target="_blank" href="https://davin.id?mitra=1">Davin Wardana <img class="icon-hati" src="https://davin.id/assets/images/gif/love.gif"></a></b></p></center>
+				    	<!--<center><p><b><a href="https://admin-bkk.smkmitraindustrimm2100.com/" target="_blank">BKK SMK Mitra Industri MM2100</a></b> &copy; 2021 | Development by <b><a target="_blank" href="https://davin.id?mitra=1">Davin Wardana <img class="icon-hati" src="https://davin.id/assets/images/gif/love.gif"></a></b></p></center>-->
+				    </div>
+				</div>
+			</footer>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+// var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+// (function(){
+// var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+// s1.async=true;
+// s1.src='https://embed.tawk.to/61f38bbab9e4e21181bc5010/1fqfljmd4';
+// s1.charset='UTF-8';
+// s1.setAttribute('crossorigin','*');
+// s0.parentNode.insertBefore(s1,s0);
+// })();
+</script>
+<!--End of Tawk.to Script-->
+
+	</body>
+</html>
+
